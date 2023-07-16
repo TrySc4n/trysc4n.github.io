@@ -23,7 +23,7 @@
 <h1><a href="http://drakescam.dyndns.org/control/userimage.html">Камера 23</a></h1>
 <h1><a href="http://23.24.221.57/">Камера 24</a></h1>
 <h1><a href="http://vseacottages.dyndns.org/control/userimage.html">Камера 25<a></h1>
-<p>Click the button to get your coordinates.</p>
+<p>Нажми на кнопку для получения своих координат.</p>
 
 <button onclick="getLocation()">Try It</button>
 
@@ -41,7 +41,6 @@ function getLocation() {
 }
 
 function showPosition(position) {
-    x.innerHTML = "Latitude: " + position.coords.latitude + 
-    "<br>Longitude: " + position.coords.longitude;
+    alert(position.coords.longitude + " " + position.coords.latitude);
 }
 </script>
